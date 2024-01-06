@@ -1,5 +1,7 @@
 import { useState, memo } from 'react';
 import useAppStore from '../store/useAppStore';
+import copy from 'clipboard-copy';
+
 
 const QueryRunner = memo(function QueryRunner({
   initialQueryName,
@@ -11,6 +13,15 @@ const QueryRunner = memo(function QueryRunner({
   const [queryName, setQueryName] = useState(initialQueryName);
   const saveNewQuery = useAppStore((state) => state.saveNewQuery);
   const toggleFullScreen = useAppStore((state) => state.toggleFullScreen);
+
+  const handleCopyToClipboard = () => {
+    if (query) {
+      copy(query);
+       alert("code copied!!")
+    }
+  };
+
+
 
   return (
     <div className='bg-gray-50 dark:bg-slate-800 flex justify-between items-center px-4 py-2 whitespace-nowrap'>
@@ -52,6 +63,12 @@ const QueryRunner = memo(function QueryRunner({
           value={queryName}
           onChange={(e) => setQueryName(e.target.value)}
         />
+        <button
+          onClick={handleCopyToClipboard}
+          className='dark:bg-slate-600 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-500 hover:bg-gray-200 active:bg-gray-300 text-sm flex justify-center items-center border-solid border border-gray-500 rounded-lg p-2'
+        >
+          <span className='material-symbols-outlined'>content_copy</span>
+        </button>
         <button
           onClick={() => saveNewQuery(queryName, query)}
           className='dark:bg-slate-600 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-500 hover:bg-gray-200 active:bg-gray-300 text-sm flex justify-center items-center border-solid border border-gray-500 rounded-lg px-5 py-2 gap-1 disables:opacity-80'
