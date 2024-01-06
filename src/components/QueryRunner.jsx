@@ -1,7 +1,9 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useState, memo } from 'react';
 import useAppStore from '../store/useAppStore';
 import copy from 'clipboard-copy';
-
 
 const QueryRunner = memo(function QueryRunner({
   initialQueryName,
@@ -14,10 +16,13 @@ const QueryRunner = memo(function QueryRunner({
   const saveNewQuery = useAppStore((state) => state.saveNewQuery);
   const toggleFullScreen = useAppStore((state) => state.toggleFullScreen);
 
-  const handleCopyToClipboard = () => {
+ const handleCopyToClipboard = () => {
     if (query) {
       copy(query);
-       alert("code copied!!")
+      toast.success('Code copied!', {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 2000,
+      });
     }
   };
 
@@ -77,6 +82,7 @@ const QueryRunner = memo(function QueryRunner({
           Save Query
         </button>
       </div>
+      <ToastContainer />
     </div>
   );
 });
