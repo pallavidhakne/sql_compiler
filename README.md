@@ -73,32 +73,32 @@ The application layout follows a user-friendly tabs design, allowing users to sw
 ## JavaScript Framework and Major Packages
 
 - **React**: A popular front-end JavaScript library for building user interfaces.
--**Vite** :  Frontend build tool designed for modern web development, providing fast development server and optimized production builds.
--**@codemirror/lang-sql**: CodeMirror language support for SQL, enhancing code editing experiences with SQL syntax highlighting and features.
+- **Vite** :  Frontend build tool designed for modern web development, providing fast development server and optimized production builds.
+- **@codemirror/lang-sql**: CodeMirror language support for SQL, enhancing code editing experiences with SQL syntax highlighting and features.
 
--**@uiw/codemirror-theme-github**: GitHub-themed styling for CodeMirror, providing a visually appealing code editor theme.
+- **@uiw/codemirror-theme-github**: GitHub-themed styling for CodeMirror, providing a visually appealing code editor theme.
 
--**@uiw/react-codemirror**: React wrapper for CodeMirror, enabling seamless integration of CodeMirror into React applications for advanced code editing capabilities.
+- **@uiw/react-codemirror**: React wrapper for CodeMirror, enabling seamless integration of CodeMirror into React applications for advanced code editing capabilities.
 
--**clipboard-copy**: Library simplifying text copying to the clipboard, enhancing user interaction with a straightforward copy mechanism.
+- **clipboard-copy**: Library simplifying text copying to the clipboard, enhancing user interaction with a straightforward copy mechanism.
 
--**framer-motion**: Animation library for React applications, enabling the creation of smooth and interactive UI animations.
+- **framer-motion**: Animation library for React applications, enabling the creation of smooth and interactive UI animations.
 
--**lodash.debounce**: Lodash utility for creating debounced functions, useful for optimizing performance by limiting the frequency of function calls.
+- **lodash.debounce**: Lodash utility for creating debounced functions, useful for optimizing performance by limiting the frequency of function calls.
 
--**lodash.throttle**: Lodash utility for creating throttled functions, controlling the rate at which a function is invoked.
+- **lodash.throttle**: Lodash utility for creating throttled functions, controlling the rate at which a function is invoked.
 
--**papaparse**: CSV parsing library for JavaScript, facilitating the parsing of CSV data in web applications.
+- **papaparse**: CSV parsing library for JavaScript, facilitating the parsing of CSV data in web applications.
 
-**react-dom**: React's package for DOM-specific methods, essential for integrating React with the Document Object Model (DOM).
+- **react-dom**: React's package for DOM-specific methods, essential for integrating React with the Document Object Model (DOM).
 
-**react-split**: React component for resizable split views, enabling the creation of flexible and interactive layout designs.
+- **react-split**: React component for resizable split views, enabling the creation of flexible and interactive layout designs.
 
-**react-toastify**: Toast notification library for React applications, providing a simple and customizable way to display notifications.
+- **react-toastify**: Toast notification library for React applications, providing a simple and customizable way to display notifications.
 
-**zustand**: State management library for React, offering a minimalistic yet powerful solution for managing global state in React applications.
+- **zustand**: State management library for React, offering a minimalistic yet powerful solution for managing global state in React applications.
 
--**tailwindcss**: Utility-first CSS framework for building modern web applications, streamlining the styling process with a utility-centric approach.
+- **tailwindcss**: Utility-first CSS framework for building modern web applications, streamlining the styling process with a utility-centric approach.
 
 ## Page Load Time Measurement
 
