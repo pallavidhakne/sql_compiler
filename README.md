@@ -105,3 +105,7 @@ The application layout follows a user-friendly tabs design, allowing users to sw
 Performance Image (https://github.com/pallavidhakne/sql_compiler/assets/85501739/1c615926-779a-451e-b3ed-1a2571f985fd)
 
 
+## Optimisations
+- **Vite**: I used Vite for the frontend development of this SQL compiler, leveraging its speed, while incorporating React for building the user interface due to its robust features.
+
+- **Memoization and useCallback Hooks**: To make our program faster, we use memoization and useCallback hooks in smart ways. Memoization helps us remember answers to difficult questions, so we don't have to redo the work if we get asked the same question again. The useCallback hook is like having a special way to remember queries.
