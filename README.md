@@ -101,4 +101,6 @@ The application layout follows a user-friendly tabs design, allowing users to sw
 - **tailwindcss**: Utility-first CSS framework for building modern web applications, streamlining the styling process with a utility-centric approach.
 
 ## Page Load Time Measurement
+Performance Image (https://github.com/pallavidhakne/sql_compiler/assets/85501739/1c615926-779a-451e-b3ed-1a2571f985fd)
+
 
